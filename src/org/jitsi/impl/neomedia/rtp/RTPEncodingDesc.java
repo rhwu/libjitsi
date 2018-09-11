@@ -260,7 +260,7 @@ public class RTPEncodingDesc
             FrameDesc newerFrame)
     {
         if (olderFrame.lastSequenceNumberKnown()
-                && newerFrame.lastSequenceNumberKnown())
+                && newerFrame.firstSequenceNumberKnown())
         {
             // We already know the last sequence number of olderFrame and the
             // first sequence number of newerFrame, no need for further
